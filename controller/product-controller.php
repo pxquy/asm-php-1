@@ -48,11 +48,11 @@ class ProductController
     public function list()
     {
         $arr_products = [
-            ['id' => 1, 'name' => 'IPhone 16', 'image' => 'IPhone16.jpg', 'price' => '1000$', 'description' => 'description'],
-            ['id' => 2, 'name' => 'IPhone 16', 'image' => 'IPhone16.jpg', 'price' => '1000$', 'description' => 'description'],
-            ['id' => 3, 'name' => 'IPhone 16', 'image' => 'IPhone16.jpg', 'price' => '1000$', 'description' => 'description'],
-            ['id' => 4, 'name' => 'IPhone 16', 'image' => 'IPhone16.jpg', 'price' => '1000$', 'description' => 'description'],
-            ['id' => 5, 'name' => 'IPhone 16', 'image' => 'IPhone16.jpg', 'price' => '1000$', 'description' => 'description'],
+            ['id' => 1, 'name' => 'IPhone 16', 'image' => 'IPhone16.jpg', 'price' => 1000, 'description' => 'description'],
+            ['id' => 2, 'name' => 'IPhone 16', 'image' => 'IPhone16.jpg', 'price' => 1000, 'description' => 'description'],
+            ['id' => 3, 'name' => 'IPhone 16', 'image' => 'IPhone16.jpg', 'price' => 1000, 'description' => 'description'],
+            ['id' => 4, 'name' => 'IPhone 16', 'image' => 'IPhone16.jpg', 'price' => 1000, 'description' => 'description'],
+            ['id' => 5, 'name' => 'IPhone 16', 'image' => 'IPhone16.jpg', 'price' => 1000, 'description' => 'description'],
         ]; // mock data
         if (!isset($_SESSION['products'])) {
             $_SESSION['products'] = $arr_products;

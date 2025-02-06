@@ -1,0 +1,92 @@
+/* Giỏ hàng */
+.cart-form {
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.cart-table, .cart-table th, .cart-table td {
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.cart-table th, .cart-table td {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.cart-table th {
+    background-color: #f2f2f2;
+}
+
+.cart-item-image img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.cart-total td {
+    font-weight: bold;
+    background-color: #f2f2f2;
+}
+
+.customer-info {
+    margin-top: 30px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.customer-info table {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.customer-info .label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.customer-info .input-field {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-submit {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.btn-submit:hover {
+    background-color: #45a049;
+}
+
+.btn-submit:active {
+    background-color: #388e3c;
+}
+
+/* Các lớp hỗ trợ */
+.cart-item-name,
+.cart-item-price,
+.cart-item-quantity,
+.cart-item-total,
+.total-amount {
+    text-align: center;
+}

@@ -10,7 +10,7 @@
                 <li><a href="/asm-php-1">Trang chủ</a></li>
                 <li><a href="?router=product">Sản phẩm</a></li>
                 <li><a href="?router=cart">Giỏ hàng</a></li>
-                <li><a href="?router=login">Đăng nhập</a></li>
+                <!-- <li><a href="?router=login">Đăng nhập</a></li> -->
             </ul>
         </div>
         <div class="footer-contact">

@@ -20,11 +20,11 @@
                 <div class="ID"><span>Mã sản phẩm: </span><?= $row['id'] ?></div>
                 <div class="name"><span>Tên sản phẩm: </span><?= $row['name'] ?></div>
                 <div class="image">
-                    <span>Hình ảnh</span>                    <span>Hình ảnh</span><img src="./uploads/<?= !empty($row['image']) ? $row['image'] : 'IPhone16.jpg' ?>" alt="Image Product">
+                    <span>Hình ảnh</span><span>Hình ảnh</span><img src="./uploads/<?= !empty($row['image']) ? $row['image'] : 'IPhone16.jpg' ?>" alt="Image Product">
                 </div>
-                <div class="price"><span>Giá sản phẩm: </span><?= $row['price'] ?></div>
+                <div class="price"><span>Giá sản phẩm: </span><?= number_format($row['price']) ?></div>
                 <div class="cart">
-                    <a href="cart.php">Thêm sản phẩm vào giỏ hàng</a>
+                    <a href="/asm-php-1/?router=add-to-cart&id=<?= $row['id'] ?>">Thêm sản phẩm vào giỏ hàng</a>
                 </div>
                 <div class="show">
                     <a href="showSlide">Xem chi tiết sản phẩm</a>
