@@ -14,9 +14,13 @@ switch ($router) {
         break;
 
     // product
-    case 'add_pro':
-        $proController = new ProductController();
-        $proController->add();
+    case 'product':
+        $productController = new ProductController();
+        $productController->list();
+        break;
+    case 'add-product':
+        $productController = new ProductController();
+        $productController->add();
         break;
 
     // cart

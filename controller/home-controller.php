@@ -13,6 +13,7 @@ class HomeController
             ['ID' => 4, 'nameProduct' => 'IPhone 16', 'image' => 'IPhone16.jpg', 'price' => '1000$'],
             ['ID' => 5, 'nameProduct' => 'IPhone 16', 'image' => 'IPhone16.jpg', 'price' => '1000$'],
         ]; // mock data
+        isset($_SESSION['products']) ? $_SESSION['products'] = $arr_products : [];
         // echo '<pre>';
         // print_r($arr_products);
         include('views/home/home.php');

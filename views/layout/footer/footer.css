@@ -1,0 +1,64 @@
+/* Footer tổng thể */
+.footer {
+    background-color: #222;
+    color: white;
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+/* Container của footer */
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Các cột trong footer */
+.footer-container div {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+
+/* Tiêu đề */
+.footer-container h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Danh sách liên kết */
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 5px 0;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+    color: #ff9800;
+}
+
+/* Phần liên hệ */
+.footer-contact p {
+    margin: 5px 0;
+}
+
+/* Dòng bản quyền */
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #111;
+    margin-top: 10px;
+}

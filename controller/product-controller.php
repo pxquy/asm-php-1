@@ -28,6 +28,19 @@ class ProductController
         include('views/products/create/create-product.php');
     }
 
+    public function list()
+    {
+        $arr_products = [
+            ['ID' => 1, 'nameProduct' => 'IPhone 16', 'image' => 'IPhone16.jpg', 'price' => '1000$'],
+            ['ID' => 2, 'nameProduct' => 'IPhone 16', 'image' => 'IPhone16.jpg', 'price' => '1000$'],
+            ['ID' => 3, 'nameProduct' => 'IPhone 16', 'image' => 'IPhone16.jpg', 'price' => '1000$'],
+            ['ID' => 4, 'nameProduct' => 'IPhone 16', 'image' => 'IPhone16.jpg', 'price' => '1000$'],
+            ['ID' => 5, 'nameProduct' => 'IPhone 16', 'image' => 'IPhone16.jpg', 'price' => '1000$'],
+        ]; // mock data
+        isset($_SESSION['products']) ? $_SESSION['products'] = $arr_products : [];
+        include('views/products/products.php');
+    }
+
     // public function edit(){
     //     $id = $_GET['id'];
     //     $model = new Database();
