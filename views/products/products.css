@@ -42,7 +42,7 @@
 }
 
 /* Nút thêm vào giỏ hàng và xem chi tiết */
-.cart a, .show a {
+.cart a, .show a, .btn {
   display: block;
   background: #ff9800;
   color: white;
@@ -54,7 +54,21 @@
   transition: background 0.3s;
 }
 
-.cart a:hover, .show a:hover {
+.btn {
+  border: none;
+}
+
+.btn-ml {
+  margin-left: 20px;
+}
+
+
+.btn a {
+  text-decoration: none;
+  color: white;
+}
+
+.cart a:hover, .show a:hover, .btn:hover {
   background: #e68900;
 }
 

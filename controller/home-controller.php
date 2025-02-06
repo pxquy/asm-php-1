@@ -7,13 +7,15 @@ class HomeController
         // $model = new Database();
         // $arr_products = $model->getListProduct(); 
         $arr_products = [
-            ['ID' => 1, 'nameProduct' => 'IPhone 16', 'image' => 'IPhone16.jpg', 'price' => '1000$'],
-            ['ID' => 2, 'nameProduct' => 'IPhone 16', 'image' => 'IPhone16.jpg', 'price' => '1000$'],
-            ['ID' => 3, 'nameProduct' => 'IPhone 16', 'image' => 'IPhone16.jpg', 'price' => '1000$'],
-            ['ID' => 4, 'nameProduct' => 'IPhone 16', 'image' => 'IPhone16.jpg', 'price' => '1000$'],
-            ['ID' => 5, 'nameProduct' => 'IPhone 16', 'image' => 'IPhone16.jpg', 'price' => '1000$'],
+            ['id' => 1, 'name' => 'IPhone 16', 'image' => 'IPhone16.jpg', 'price' => '1000$', 'description' => 'description'],
+            ['id' => 2, 'name' => 'IPhone 16', 'image' => 'IPhone16.jpg', 'price' => '1000$', 'description' => 'description'],
+            ['id' => 3, 'name' => 'IPhone 16', 'image' => 'IPhone16.jpg', 'price' => '1000$', 'description' => 'description'],
+            ['id' => 4, 'name' => 'IPhone 16', 'image' => 'IPhone16.jpg', 'price' => '1000$', 'description' => 'description'],
+            ['id' => 5, 'name' => 'IPhone 16', 'image' => 'IPhone16.jpg', 'price' => '1000$', 'description' => 'description'],
         ]; // mock data
-        isset($_SESSION['products']) ? $_SESSION['products'] = $arr_products : [];
+        if (!isset($_SESSION['products'])) {
+            $_SESSION['products'] = $arr_products;
+        }
         // echo '<pre>';
         // print_r($arr_products);
         include('views/home/home.php');
