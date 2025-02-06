@@ -20,7 +20,6 @@ switch ($router) {
         break;
 
     // cart
-
     default:
         $home = new HomeController();
         $home->home();
